@@ -75,3 +75,8 @@ const dev = Object.assign({}, wes);
 dev.name='Wesley';
 dev.social.twitter = '@coolman';
 console.log(dev);
+
+//deepclone
+const dev2 = JSON.parse(JSON.stringify(wes));
+dev2.social.twitter = '@superdev';
+console.log(wes, dev2)
